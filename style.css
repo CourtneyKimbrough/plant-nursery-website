@@ -7,7 +7,7 @@ body {
 /* font things */
 
 * {
-    color: #00231C;
+    color: #00231C !important;
     font-family: Calibri, sans-serif;
     font-size: 16px;
 }
@@ -28,10 +28,11 @@ a, p {font-family: "Comfortaa", sans-serif;
     font-size: 15px;
 }
 
-h4, .perktitle {font-family: Calibri, sans-serif;
+h4, .perktitle, .body-strong {font-family: Calibri, sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
+
 
 
 
@@ -142,16 +143,13 @@ header {
     width: 50%;
 }
 
-
-
-   
-
 /* align text in center of buttons */
 button {
     text-align: center;
     background-color: #96BAA0;
     border: 0;
     border-radius: 5%;
+    padding: 8px;
 }
 
 /* categories */
@@ -220,4 +218,109 @@ h4 {
     display: flex;
     width: 10%;
     justify-content: space-between
+}
+
+/* gallery.html */
+
+.product {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-listings {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product-listing {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.product-listing p {
+    text-align: center;
+}
+
+
+.product-listing button {
+    width: 33%;
+    margin: 20px;
+}
+
+.title {
+    padding: 20px;
+}
+
+/* about me */
+.hours {
+    width: 350px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    background-color: #BDD4DA;
+}
+
+.about-us {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contactform {
+    width: 350px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 50%;
+}
+
+.form-buttons {
+    align-items: center;
+}
+
+form {
+    padding: 20px;
+}
+
+/* connect */
+
+.customers {
+    padding: 20px;
+    display: flex;
+
+}
+
+.customer {
+    width: 33%;
+    margin: 10px;
+    background-color: #BDD4DA;
+    padding: 10px;
+    text-align: center;
+}
+
+.community-involvement {
+    padding: 20px;
+    background-color: #96BAA0;
+}
+
+.events{
+    padding: 20px;
 }
