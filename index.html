@@ -6,6 +6,8 @@
     <title>Bloom Valley Nursey</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="script.js"></script>
+</head>
 <body>
     <header class="header">
         <div class="logo"> 
@@ -46,7 +48,7 @@
         <h2>Why Choose Bloom Valley Nursery? ...</h2>
         <div class="perks">
             <div class="perk">
-                <p class="perktitle">Locally Grown, Family-Owned</p>
+                <h4 class="perktitle">Locally Grown, Family-Owned</h4>
                 <p class="perkdescr">We take pride in being a family-run nursery that understands the needs of our local gardening community.</p>
             </div>
             <div class="perk">
@@ -77,23 +79,24 @@
     <footer>
         <div class="subscribe-feature">
             <h4>Sign up for our Newsletter</h4>
-            <input type="text"> 
-            <button>Subscribe</button>
-
+            <form onsubmit="return thankyou(event)">
+                <input type="email" name="email" required /> 
+                <button>Subscribe</button>
+            </form>
         </div>
         <div class="social-links">
-              <a href="https://x.com/supermariomovie?prefetchTimestamp=1740380683522&mx=2" target="_blank">
+              <a href="https://x.com" target="_blank">
                 <i class="fa-brands fa-square-x-twitter"></i>
               </a>
         
-              <a href="https://www.instagram.com/supermariomovie/?hl=en" target="_blank">
+              <a href="https://www.instagram.com" target="_blank">
                 <i class="fa-brands fa-square-instagram"></i>
               </a>
         
-              <a href="https://www.youtube.com/watch?v=TnGl01FkMMo">
+              <a href="https://www.youtube.com/" target="_blank">
                 <i class="fa-brands fa-square-youtube"></i>
               </a>
-              <a href="https://www.facebook.com/supermariomovie/" target="_blank">
+              <a href="https://www.facebook.com/" target="_blank">
                 <i class="fa-brands fa-square-facebook"></i>
               </a>
         
@@ -107,9 +110,5 @@
 
 
     </footer>
-
-
-
-    <script src="script.js"></script>
 </body>
 </html>
